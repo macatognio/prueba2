@@ -1,0 +1,278 @@
+body {
+  display: block;
+  margin: auto;
+  background-color: rgb(102, 245, 197);
+}
+
+/*primero en el móvil (mobile first)*/
+
+nav {
+  padding: 1em;
+  font-family: Verdana, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(177, 241, 220);
+text-align: center;
+}
+.nav li ul {
+  display: none;
+  position: absolute;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+
+nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+}
+nav li{
+  text-align: center;
+}
+
+.imgfondo {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  height: 400px;
+  margin-bottom: -30px;
+  padding-bottom: 20px;
+}
+
+.bajoimg {
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bajoimg2 {
+  padding-left: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+
+.facebook, .gmail, .insta, .mail {
+  padding-left: 5%;
+  padding-top: 5%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.enlinea {
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 16px;
+  padding-bottom: 30px;
+}
+
+.contenedorgrande {
+  /* border:solid 1px red; */
+  text-align: center;
+  background-color: white;
+  display: block;
+  padding: 30px 10px;
+  display: block;
+  margin: auto;
+}
+
+
+footer {
+  background-color: rgba(236, 219, 231, 0.952);
+  padding-bottom: 5%;
+  margin-top: -150px;
+  margin-bottom: -100px;
+  padding: 10px 20px;
+  padding-bottom: 90px;
+}
+
+footer p {
+  margin-left: 30px;
+  color: dimgray;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fnldiv {
+  background-color: white;
+}
+
+.perro {
+  background-color: white;
+  padding: 10px 10px;
+  display: inline-block;
+  text-align: right;
+  /* border: 1px solid #4800ff; */
+  margin-bottom: 100px;
+  margin-top: -10px;
+  margin-left: 240px;
+}
+
+.crow {
+  background-color: white;
+  margin-right: 30px;
+  padding: 10px 10px;
+  text-align: left;
+  display: inline-block;
+  margin: 20px;
+  /* border: 1px solid #4800ff; */
+  margin-right: 100px;
+  margin-left: 640px;
+  margin-top: -500px;
+}
+
+perro h2 p {
+  font-style: italic;
+}
+
+.perro h2, .crow h2 {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.perro p, .crow p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.952);
+}
+
+.linea {
+  border: black solid;
+  width: 30px;
+  height: 0;
+  text-align: right;
+  border-color: gainsboro;
+  margin-left: 400px;
+  margin-top: 20px;
+}
+
+.linea2 {
+  border: black solid;
+  width: 30px;
+  height: 0;
+  text-align: left;
+  border-color: gainsboro;
+  margin-right: 400px;
+  margin-top: 20px;
+}
+
+.centrado {
+  position: absolute;
+  top: 80%;
+  left: 21%;
+  transform: translate(-50%, -50%);
+  color:black;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+
+ @media screen and (min-width: 360px) {
+  nav ul {
+    display: -webkit-inline-box;
+    justify-content: center;
+  }
+ .imglogo{
+   text-align: center;
+   display: initial;
+ }
+
+  .centrado {
+    position: absolute;
+    top: 80%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 60px;
+  }
+ 
+
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    background-color: rgb(102, 245, 197);
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  .imgfondo {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .imglogo{
+    text-align: center;
+   
+  }
+  .bajoimg, .bajoimg2 {
+    display: none;
+  }
+  .facebook, .gmail, .insta, .mail {
+    margin-left: 100px;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    margin: 7px;
+    border-radius: 50%;
+  }
+  .enlinea {
+    text-align: center;
+  }
+  .contenedorgrande {
+    content: none;
+    display: block;
+    clear: both;
+    background-color: white;
+  }
+  .perro {
+    background-color: white;
+    float: left;
+    text-align: right;
+    margin-bottom: 100px;
+    margin-top: -30px;
+    margin-left: 100px;
+    padding-right: 52px;
+    display: contents;
+  }
+  .imgperro {
+    width: 60%;
+  }
+  .imgcrow {
+    width: 50%;
+  }
+  .crow {
+    background-color: white;
+    margin-right: 30px;
+    padding: 10px 10px;
+    text-align: left;
+    display: block;
+    margin: auto;
+ 
+  }
+  .linea {
+    margin: 0px;
+  }
+  .footer {
+    padding: 0px;
+  } 
+} 
